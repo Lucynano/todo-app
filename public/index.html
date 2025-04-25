@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Liste des Tâches</h1>
+    
+    <!-- Formulaire pour ajouter une tâche -->
+    <form id="task-form">
+
+        <input type="text" id="task-title" placeholder="Titre de la tâche" required>
+
+        <textarea id="task-desc" placeholder="Description (optionnel)"></textarea>
+
+        <input type="text" id="task-category" placeholder="Catégorie">
+
+        <input type="date" id="task-date">
+
+        <button type="submit">Ajouter Tâche</button>
+
+    </form> 
+
+    <!-- Controls -->
+     <div id="controls">
+        <input type="search" id="search" placeholder="Rechercher...">
+        <select id="filter-cat">
+            <option value="">Toutes catégories</option>
+        </select>
+        <select id="sort">
+            <option value="dateDesc">Tri: date ↓</option>
+            <option value="dateAsc">Tri: date ↑</option>
+            <option value="alpha">Tri: A → Z</option>
+            <option value="status">Tri: terminées en bas</option>
+        </select>
+     </div>
+
+    <!-- Zone où s'afficheront les tâches -->
+    <div id="task-list">
+        <!-- Les tâches seront ajoutées ici par JS -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
