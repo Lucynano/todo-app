@@ -10,3 +10,7 @@ Jour 1:
 Jour 2:
 - Coder en js: ajout tache et affiche immediat, recharge la page garde les taches, les btn pour supp et cocher
 - Test
+
+Jour 3:
+- maj html/css
+- maj scrip.js: ajout state, branche ctrs, filtre/tri
